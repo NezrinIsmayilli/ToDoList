@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@500&display=swap');
+body{
+    background-color: #E5E5E5;
+}
+.head{
+    width: 100%;
+    height: 296px;
+    background-image: url("./img/Background.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0px;
+}
+.todo{
+    width: 100%;
+    position: absolute;
+    top: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.todo .total{
+    width: 579px;
+}
+.todo h2{
+    color: white;
+    font-family: 'Exo 2';
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 60px;
+}
+.todo form{
+    padding: 5px 15px;
+    height: 68px;
+    border-radius:10px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.todo form input{
+    font-family: 'Exo 2';
+    padding: 10px 10px 10px 40px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    width: 100%;
+}
+.todo form input::placeholder { 
+    color: #CECECE;
+  }
+  
+.todo form button{
+    border: none;
+    background-color: #00A3FF;
+    border-radius: 5px;
+    color: white;
+    font-size: 30px;
+    width: 29.4px;
+    height: 29.4px;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    font-family: serif;
+}
+.todo .list{
+    background-color: white;
+    margin-top: 18px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.todo .list ul{
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+    max-height: 400px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+.todo .list ul li{
+    min-height: 68px;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 20px;
+    width: 100%;
+    border-bottom: 1px solid #E0E0E0;
+}
+.todo .list ul li:last-child{
+    border-bottom: none;
+}
+.todo .list ul li div{
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.todo .list li div button{
+    width: 24px;
+    height: 24px;
+    border-radius: 100%;
+    border: 1px solid #00D1FF;
+    background-color: white;
+}
+.todo .list li div .compl{
+    background-color: #00D1FF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+.todo .list ul li p{
+    color: #414141;
+    font-family: 'Exo 2';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    width: 100%;
+    margin: auto 0;
+    padding: 10px 10px 10px 20px;
+    display: inline;
+    white-space: initial;
+    word-break: break-all;
+}
+.todo .list ul .delete{
+    color: #FF542F;
+    font-size: 18px;
+    cursor: pointer;
+    opacity: 0;
+    transition: 0.4s;
+   
+}
+.todo .list ul li:hover .delete{
+    opacity: 1;
+}
+.todo .nolist{
+    width: 100%;
+    height: 339px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.todo .nolist img{
+    width: 150px;
+    height: 150px;
+}
+.todo .nolist p{
+    font-family: 'Exo 2';
+    color: #858585;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    margin-top: 5px;
+}
+.todo .end{
+    border-top: 1px solid #E0E0E0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 0px 0px 10px 10px;
+    padding: 10px;
+}
+.todo .end .text{
+    display: flex; 
+    justify-content: space-between;
+    padding: 10px 0px 10px 15px;
+    
+}
+.todo .end p{
+    margin: 0px;
+    font-family: 'Exo 2';
+    color: #858585;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    margin-right: 13px;
+}
+.todo .end .alldelete{
+    border: none;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    font-family: 'Exo 2';
+    color: #858585;
+    cursor: pointer;
+}
+.completed{
+    text-decoration: line-through;
+    color: #B4B4B4 !important;
+}
+@media only screen and (max-width: 579px) {
+    .todo .total{
+        width: 80%;
+    }
+  }
